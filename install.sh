@@ -26,11 +26,11 @@ sleep 10
 
 #更新
 
-sudo apt-get update
+sudo apt-get update -y
 
 #安装依赖
 
-sudo apt-get install curl wget
+sudo apt-get install curl wget -y
 
 #加入网络镜像代理
 
@@ -120,7 +120,7 @@ sudo rustup component add rls rust-analysis rust-src
 
 #安装其他工具
 
-sudo apt-get install build-essential
+sudo apt-get install build-essential -y
 
 #下载文件
 
