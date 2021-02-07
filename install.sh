@@ -44,73 +44,17 @@ sudo curl https://sh.rustup.rs -sSf | sh
 
 #刷新变量
 
-sudo source $HOME/.cargo/env #方法1
-
-#其他方法
-
-if [ ! -d "/home/.cargo/env" ];then
-
-  #文件不存在
-
-else
-
-  sudo source /home/.cargo/env 
-
-fi
-
-if [ ! -d "/root/.cargo/env" ];then
-
-  #文件不存在
-
-else
-
-  sudo source /root/.cargo/env 
-
-fi
+sudo source $HOME/.cargo/env
 
 #安装配置文件
 
 #复制文件
 
-sudo cp -r config $HOME/.cargo/ #方法1
+sudo cp -r config $HOME/.cargo/
 
 #赐予权限
 
 chmod 777  $HOME/.cargo/config
-
-#其他方法
-
-if [ ! -d "/home/.cargo/" ];then
-
-  #文件不存在
-
-else
-
-#复制文件
-
-  sudo cp -r config /hone/.cargo/
-
-  #赐予权限
-
-  sudo chmod 777 /home/.cargo/config
-
-fi
-
-if [ ! -d "/root/.cargo/" ];then
-
-  #文件不存在
-
-else
-
-#复制文件
-
-  sudo cp -r config /root/.cargo/
-
-  #赐予权限
-
-  sudo chmod 777 /root/.cargo/config
-
-fi
 
 #更新rustup
 
@@ -123,26 +67,6 @@ sudo rustup component add rls rust-analysis rust-src
 sudo apt-get install build-essential -y
 
 #下载文件
-
-wget https://github.com/luxrck/rgssad/releases/download/0.1.4/rgssad-linux-x64
-
-#刷新环境变量文件
-
-source $HOME/.cargo/env #方法1
-
-source ~/.cargo/env #方法2
-
-#复制配置文件
-
-cp -r config ~/.cargo/
-
-#更新rustup到最新
-
-rustup self update
-
-rustup component add rls rust-analysis rust-src
-
-#下载解密工具
 
 wget https://github.com/luxrck/rgssad/releases/download/0.1.4/rgssad-linux-x64
 
