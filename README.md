@@ -4,7 +4,7 @@
 
 ```shell
 
-sudo apt-get update && apt-get install git && cd ~ && mkdir rbl-cache && cd cache && git clone https://github.com/FurryRbl/Ubuntu-rgssad.git && cd Ubuntu-rgssad && sh install.sh
+sudo apt-get -y update && apt-get install git && cd ~ && mkdir rbl-cache && cd rbl-cache && git clone https://github.com/FurryRbl/Ubuntu-rgssad.git && cd Ubuntu-rgssad && sh install.sh
 
 ```
 
